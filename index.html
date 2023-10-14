@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Piedra, Papel o Tijeras</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Piedra, Papel o Tijeras</h1>
+        <div class="score">
+            <p id="user-score">Usuario: 0</p>
+            <p id="computer-score">Computadora: 0</p>
+        </div>
+        <div class="options">
+            <button onclick="play('piedra')">
+                <img src="img/piedra.jpg" alt="Piedra"style="height: 6rem;width: 6rem;">
+            </button>
+            <button onclick="play('papel')">
+                <img src="img/papel.webp" alt="Papel"style="height: 6rem;width: 6rem;">
+            </button>
+            <button onclick="play('tijera')">
+                <img class="i" src="img/tijeras.webp" alt="Tijeras" style="height: 6rem; width: 6rem;">
+            </button>
+        </div>
+        <div id="result"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
